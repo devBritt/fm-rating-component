@@ -22,6 +22,101 @@ button {
   font: inherit;
 }
 p,
-h2 {
+h2,
+button,
+.attribution {
+  font-family: 'Overpass', sans-serif;
   overflow-wrap: break-word;
+}
+body {
+  background-color: #121417;
+}
+p,
+h2,
+button {
+  color: #fff;
+}
+h2 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.scale-opt,
+#submit-rating,
+h2 {
+  font-weight: 700;
+}
+.card-desc,
+.scale-opt,
+button {
+  font-size: 0.875rem;
+}
+.card {
+  width: 327px;
+  padding: 24px 24px 32px 24px;
+  background-image: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #171d26 100%);
+  border-radius: 15px;
+}
+.circle-container {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252d37;
+  color: #7c8798;
+  border-radius: 42px;
+}
+#star {
+  color: #fb7413;
+}
+.card-desc {
+  line-height: 22px;
+  font-weight: 400;
+  color: #959eac;
+}
+#rating-scale {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+.scale-opt:hover {
+  background-color: #fb7413;
+  color: #fff;
+}
+#submit-rating {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #fb7413;
+  border: none;
+  border-radius: 42px;
+  text-transform: uppercase;
+}
+#submit-rating:hover {
+  color: #fb7413;
+  background-color: #fff;
+}
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
+  text-align: center;
+}
+.attribution {
+  color: #fff;
+}
+.attribution a {
+  text-decoration: none;
+  color: #7c8798;
+}
+.attribution a:hover {
+  color: #fb7413;
+}
+.hide {
+  display: none;
+}
+.isSelected {
+  background-color: #7c8798;
+  color: #fff;
 }

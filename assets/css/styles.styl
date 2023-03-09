@@ -51,5 +51,105 @@ button
 
 p
 h2
+button
+.attribution
+  font-family 'Overpass', sans-serif
   overflow-wrap break-word
+// end global reset
 
+// body styles
+body
+  background-color darkest-blue
+
+// card styles
+p
+h2
+button
+  color white
+
+h2
+  margin-top 16px
+  margin-bottom 10px
+  font-size lg-text
+
+.scale-opt
+#submit-rating
+h2
+  font-weight bold-weight
+
+.card-desc
+.scale-opt
+button
+  font-size xs-text
+
+.card
+  width 327px
+  padding 24px 24px 32px 24px
+  background-image black-gradient
+  border-radius card-radius-sm
+
+.circle-container
+  width 42px
+  height 42px
+  display flex
+  justify-content center
+  align-items center
+  background-color dark-blue
+  color mid-gray
+  border-radius 42px
+
+#star
+  color primary-orange
+
+.card-desc
+  line-height lh-22
+  font-weight reg-weight
+  color lightest-gray
+
+#rating-scale
+  display flex
+  justify-content space-between
+  margin 24px 0
+
+.scale-opt
+  &:hover
+    background-color primary-orange
+    color white
+
+#submit-rating
+  width 100%
+  padding 12px 0
+  background-color primary-orange
+  border none
+  border-radius 42px
+  text-transform uppercase
+  &:hover
+    color primary-orange
+    background-color white
+
+// footer styles
+footer
+  width 100%
+  position absolute
+  bottom 0
+  height 2.5rem
+  text-align center
+
+.attribution
+  color white
+
+.attribution a
+  text-decoration none
+  color mid-gray
+  &:hover
+    color primary-orange
+
+// styles for js funtionality
+// css class to hide elements using JS
+.hide
+  display none
+
+// css class to apply styles to selected rating options
+.isSelected
+  background-color mid-gray
+  color white
