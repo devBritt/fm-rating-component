@@ -56,6 +56,7 @@ button {
   padding: 24px 24px 32px 24px;
   background-image: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #171d26 100%);
   border-radius: 15px;
+  text-align: center;
 }
 .circle-container {
   width: 42px;
@@ -95,6 +96,19 @@ button {
 #submit-rating:hover {
   color: #fb7413;
   background-color: #fff;
+}
+.illustration > svg {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pill {
+  margin: 24px 48px;
+  padding: 7px 0 3px 0;
+  border-radius: 22.5px;
+  text-align: center;
+  background-color: #252d37;
+  color: #fb7413;
 }
 footer {
   width: 100%;
