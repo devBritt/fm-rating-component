@@ -21,15 +21,32 @@
         <h2>How did we do?</h2>
         <p class="card-desc">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-        <ul id="rating-scale">
-          <li id="1" class="rating-opt">1</li>
-          <li id="2" class="rating-opt">2</li>
-          <li id="3" class="rating-opt">3</li>
-          <li id="4" class="rating-opt">4</li>
-          <li id="5" class="rating-opt">5</li>
-        </ul>
+        <form id="rating">
+          <fieldset id="scale">
+            <label for="radio1" class="radio-label">
+              <input type="radio" id="radio1" name="radio1" value="1">
+              1
+            </label>
+            <label for="radio2" class="radio-label">
+              <input type="radio" id="radio2" name="radio2" value="2">
+              2
+            </label>
+            <label for="radio3" class="radio-label">
+              <input type="radio" id="radio3" name="radio3" value="3">
+              3
+            </label>
+            <label for="radio4" class="radio-label">
+              <input type="radio" id="radio4" name="radio4" value="4">
+              4
+            </label>
+            <label for="radio5" class="radio-label">
+              <input type="radio" id="radio5" name="radio5" value="5">
+              5
+            </label>
+          </fieldset>
 
-        <button type="submit" id="submit-rating">Submit</button>
+          <button type="submit" id="submit-rating">Submit</button>
+        </form>
       </section>
       <!-- Rating state end -->
 
