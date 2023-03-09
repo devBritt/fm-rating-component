@@ -4,6 +4,7 @@ const ratingStateEl = document.querySelector('#rate-state');
 const thankStateEl = document.querySelector('#thank-state');
 const ratingScaleEl = document.querySelector('#rating-scale');
 const userRating = document.querySelector('#user-rating');
+const submitErrorEl = document.querySelector('#submit-error');
 let ratingOptsEl = ratingScaleEl.querySelectorAll('.scale-opt');
 
 // event handlers
@@ -18,15 +19,19 @@ const submitRating = (e) => {
   ratingOptsEl.forEach(el => {
     if (el.id) {
       selectedRating = el.innerHTML;
+      
+      // update the DOM to remove rate-state and display thank-state
+      ratingStateEl.className = 'hide';
+      thankStateEl.className = '';
+    
+      // display selected rating in pill
+      userRating.innerHTML = selectedRating;
     }
   })
 
-  // update the DOM to remove rate-state and display thank-state
-  ratingStateEl.className = 'hide';
-  thankStateEl.className = '';
-
-  // display selected rating in pill
-  userRating.innerHTML = selectedRating;
+  if (!selectedRating) {
+    submitErrorEl.className = ''
+  }
 }
 
 // event listeners

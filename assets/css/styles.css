@@ -92,6 +92,12 @@ button {
   background-color: #fb7413;
   color: #fff;
 }
+#submit-error {
+  margin-top: 7px;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #959eac;
+}
 #submit-rating {
   width: 100%;
   padding: 12px 0;
