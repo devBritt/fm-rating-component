@@ -64,7 +64,6 @@ button {
   padding: 24px 24px 32px 24px;
   background-image: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #171d26 100%);
   border-radius: 15px;
-  text-align: center;
 }
 .circle-container {
   width: 42px;
@@ -105,6 +104,9 @@ button {
   color: #fb7413;
   background-color: #fff;
 }
+#thank-state {
+  text-align: center;
+}
 .illustration > svg {
   margin-top: 10px;
   margin-left: auto;
@@ -114,7 +116,6 @@ button {
   margin: 24px 48px;
   padding: 7px 0 3px 0;
   border-radius: 22.5px;
-  text-align: center;
   background-color: #252d37;
   color: #fb7413;
 }
@@ -141,4 +142,38 @@ footer {
 #isSelected {
   background-color: #7c8798;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 412px;
+    padding: 32px;
+    border-radius: 30px;
+  }
+  h2 {
+    margin-top: 32px;
+    margin-bottom: 7px;
+    font-size: 1.75em;
+    line-height: 36px;
+  }
+  .card-desc,
+  .pill,
+  #submit-rating {
+    font-size: 1rem;
+  }
+  .card-desc {
+    line-height: 24px;
+  }
+  .scale-opt {
+    font-size: 0.94rem;
+  }
+  .circle-container {
+    width: 51px;
+    height: 51px;
+  }
+  #submit-rating {
+    margin-top: 8px;
+  }
+  .illustration {
+    margin-top: 10px;
+  }
 }

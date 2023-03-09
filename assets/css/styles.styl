@@ -17,6 +17,7 @@ xs-text = 0.875rem
 
 lh-24 = 24px
 lh-22 = 22px
+lh-36 = 36px
 
 reg-weight = 400
 bold-weight = 700
@@ -95,7 +96,6 @@ button
   padding 24px 24px 32px 24px
   background-image black-gradient
   border-radius card-radius-sm
-  text-align center
 
 .circle-container
   width 42px
@@ -137,6 +137,9 @@ button
     background-color white
 
 // thank you state styles
+#thank-state
+  text-align center
+
 .illustration > svg
   margin-top 10px
   margin-left auto
@@ -146,7 +149,6 @@ button
   margin 24px 48px
   padding 7px 0 3px 0
   border-radius pill-radius
-  text-align center
   background-color dark-blue
   color primary-orange
 
@@ -176,3 +178,38 @@ footer
 #isSelected
   background-color mid-gray
   color white
+
+// MEDIA QUERIES
+// tablets and larger
+@media screen and (min-width 768px)
+  .card
+    width 412px
+    padding 32px
+    border-radius card-radius-lg
+
+  h2
+    margin-top 32px
+    margin-bottom 7px
+    font-size xl-text
+    line-height lh-36
+
+  .card-desc
+  .pill
+  #submit-rating
+    font-size md-text
+
+  .card-desc
+    line-height lh-24
+
+  .scale-opt
+    font-size sm-text
+
+  .circle-container
+    width 51px
+    height 51px
+
+  #submit-rating
+    margin-top 8px
+
+  .illustration
+    margin-top 10px
