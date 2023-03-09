@@ -130,7 +130,7 @@ footer {
 .hide {
   display: none;
 }
-.isSelected {
+#isSelected {
   background-color: #7c8798;
   color: #fff;
 }

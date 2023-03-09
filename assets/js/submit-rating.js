@@ -2,22 +2,36 @@
 // card states
 const ratingStateEl = document.querySelector('#rate-state');
 const thankStateEl = document.querySelector('#thank-state');
-const ratingScaleEl = document.querySelector('#scale');
+const ratingScaleEl = document.querySelector('#rating-scale');
 const userRating = document.querySelector('#user-rating');
-let ratingOptsEl = ratingScaleEl.querySelectorAll('label > input');
+let ratingOptsEl = ratingScaleEl.querySelectorAll('.scale-opt');
 
 // event handlers
+const selectRating = (e) => {
+  e.target.id = 'isSelected';
+}
+
 const submitRating = (e) => {
   let selectedRating;
 
-  ratingOptsEl.forEach(item => {
-    if (item.checked) {
-      selectedRating = item.value;
+  // check each rating option to see if it has the id 'isSelected'
+  ratingOptsEl.forEach(el => {
+    if (el.id) {
+      selectedRating = el.innerHTML;
     }
-  });
+  })
 
+  // update the DOM to remove rate-state and display thank-state
+  ratingStateEl.className = 'hide';
+  thankStateEl.className = '';
+
+  // display selected rating in pill
   userRating.innerHTML = selectedRating;
 }
 
 // event listeners
 document.querySelector('#submit-rating').addEventListener('click', submitRating);
+
+ratingOptsEl.forEach(item => {
+  item.addEventListener('click', selectRating);
+});
