@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Interactive rating component screenshot](./assets/images/screenshot.jpg)
+![Interactive rating component screenshot](./assets/images/screenshot.png)
 
 ### Links
 
